@@ -1,0 +1,28 @@
+# JianShanAgent 的站点目录：做好了的站点插件有哪些。
+# 管理后台的「Wiki」页读的就是这个文件，按平台筛选，点一下把那个 wiki 挂上。格式见 README.md。
+format: 1
+
+sites:
+  - id: huiji_yys
+    platform: huiji
+    name: 阴阳师 Wiki
+    description: 灰机上的阴阳师 Wiki（yys.huijiwiki.com）：式神、御魂的结构化查询和 /筛选，更新公告、剧情与数据集入库，立绘图库与以图搜图。
+    repo: JianShanAgent/site-huiji-yys
+    wiki:
+      id: huiji
+      label: 灰机 wiki
+      api_url: https://yys.huijiwiki.com/api.php
+      # wiki 在 Cloudflare 后面：请求要带放行请求头，密钥填在实例 secrets.yaml 的 wiki.<名字>.authkey
+      auth_header: X-authkey
+
+  - id: bwiki_yys
+    platform: bwiki
+    name: 阴阳师剧情百科
+    description: BWiki 上的阴阳师剧情百科（wiki.biligame.com/yys）：式神的查询（稀有度、上线日期、CV、其他形态、设定摘要），以及这个站的清洗规则和不入库的页面。
+    repo: JianShanAgent/site-bwiki-yys
+    wiki:
+      id: bwiki
+      label: BWiki
+      api_url: https://wiki.biligame.com/yys/api.php
+      site_base: https://wiki.biligame.com/yys
+      article_path: /$1
