@@ -18,7 +18,7 @@ sites:
   - id: bwiki_yys
     platform: bwiki
     name: 阴阳师剧情百科
-    description: BWiki 上的阴阳师剧情百科（wiki.biligame.com/yys）：式神的查询（稀有度、上线日期、CV、其他形态、设定摘要），以及这个站的清洗规则和不入库的页面。
+    description: BWiki 上的阴阳师剧情百科（wiki.biligame.com/yys）：式神的查询（稀有度、上线日期、CV、其他形态、设定摘要），知识库里带着歌名的歌词，以及这个站的清洗规则和不入库的页面。
     repo: JianShanAgent/site-bwiki-yys
     wiki:
       id: bwiki
